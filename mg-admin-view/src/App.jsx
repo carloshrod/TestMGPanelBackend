@@ -17,21 +17,23 @@ function App() {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<NavBar />
-			<MyContainer>
-				<Routes>
-					<Route exact path='/' element={<Users />} />
-					<Route path='/:userId' element={<UserDetails />} />
-				</Routes>
-			</MyContainer>
-			<Footer />
-			<Modal />
-			<ToastContainer
-				position='bottom-right'
-				theme='dark'
-				newestOnTop
-				transition={Flip}
-			/>
+			<main>
+				<NavBar />
+				<MyContainer>
+					<Routes>
+						<Route exact path='/' element={<Users />} />
+						<Route path='/:userId' element={<UserDetails />} />
+					</Routes>
+				</MyContainer>
+				<Footer />
+				<Modal />
+				<ToastContainer
+					position='bottom-right'
+					theme='dark'
+					newestOnTop
+					transition={Flip}
+				/>
+			</main>
 		</ThemeProvider>
 	);
 }

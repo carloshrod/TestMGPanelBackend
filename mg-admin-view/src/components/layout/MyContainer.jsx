@@ -4,9 +4,8 @@ import { useLocation } from 'react-router-dom';
 const MyContainer = ({ children }) => {
 	const { pathname } = useLocation();
 
-	const TITLES = {
-		'/': 'Administrar Usuarios',
-	};
+	const title =
+		pathname === '/' ? 'Administrar Usuarios' : 'Detalles del Usuario';
 
 	return (
 		<Box className='myContainer'>
@@ -14,7 +13,7 @@ const MyContainer = ({ children }) => {
 				sx={{ pl: { sm: 3 }, fontSize: { xs: 24, sm: 34 } }}
 				variant='h4'
 			>
-				{TITLES[pathname]}
+				{title}
 			</Typography>
 			<Grid container spacing={3} py={2}>
 				{children}
