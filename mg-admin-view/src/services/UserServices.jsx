@@ -43,8 +43,8 @@ const UserServices = () => {
 					user._id === res.data._id ? res.data : user
 				);
 				setUsers(newData);
+				if (pathname !== '/') fetchUser(userId);
 				toast.success('Usuario actualizado con éxito!');
-				fetchUser(userId);
 				return;
 			}
 		} catch (error) {
@@ -73,7 +73,7 @@ const UserServices = () => {
 					const newData = users.filter(user => user._id !== userId);
 					setUsers(newData);
 					toast.success('Usuario eliminado con éxito!');
-					if (pathname !== '/') navigate('/');
+					navigate('/');
 					return;
 				}
 			}
@@ -100,11 +100,8 @@ const UserServices = () => {
 					options
 				);
 				if (res.status === 200) {
-					if (pathname === '/') {
-						fetchUsers();
-					} else {
-						fetchUser(userId);
-					}
+					fetchUsers();
+					if (pathname !== '/') fetchUser(userId);
 					toast.success('Subscripción cancelada con éxito!');
 					return;
 				}
