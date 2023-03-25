@@ -14,7 +14,7 @@ const userRoutes = Router();
 userRoutes.get('/', getAllUsers);
 userRoutes.get('/:_id', getOneUser);
 userRoutes.post('/', verifyExistingUser, createUser);
-userRoutes.put('/:_id', updateUser);
+userRoutes.put('/:_id', verifyExistingUser, updateUser);
 userRoutes.patch('/:_id', unsubscribeUser);
 userRoutes.delete('/:_id', deleteUser);
 

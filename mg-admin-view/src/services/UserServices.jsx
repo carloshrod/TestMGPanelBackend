@@ -49,7 +49,7 @@ const UserServices = () => {
 			}
 		} catch (error) {
 			console.error(error);
-			toast.error(error.message);
+			toast.error(error.response?.data?.msg || error.message);
 		}
 	};
 
@@ -79,7 +79,7 @@ const UserServices = () => {
 			}
 		} catch (error) {
 			console.error(error);
-			toast.error(error.message);
+			toast.error(error.response?.data?.msg || error.message);
 		}
 	};
 
@@ -111,7 +111,7 @@ const UserServices = () => {
 			}
 		} catch (error) {
 			console.error(error);
-			toast.error(error.message);
+			toast.error(error.response?.data?.msg || error.message);
 		}
 	};
 
