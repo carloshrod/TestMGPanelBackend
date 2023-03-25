@@ -1,0 +1,256 @@
+@import url("https://fonts.cdnfonts.com/css/nexa-bold");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+:root {
+  font-family: "Nexa", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: #0959ba;
+}
+
+/* ********** Resets ********** */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 900;
+  line-height: 150%;
+}
+
+/* **************************** */
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-areas: "contact form";
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem 0;
+}
+main .contact {
+  grid-area: contact;
+  font-family: "Satoshi", Helvetica, Arial, sans-serif;
+  padding-left: 3rem;
+}
+main .contact__logo {
+  width: 150px;
+}
+main .contact__social {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0 2rem 0;
+}
+main .contact__social i {
+  font-size: 25px;
+}
+main .contact__location {
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+main .contact__location i {
+  padding-right: 1rem;
+}
+main .contact__email, main .contact__phone {
+  padding-bottom: 2rem;
+}
+main .form {
+  grid-area: form;
+  background: #1ea2d6 !important;
+  border-radius: 60px 0 0 60px;
+  padding: 4rem 3rem;
+  text-align: center;
+}
+main .form__container {
+  display: grid;
+  gap: 3rem;
+}
+main .form__title {
+  font-size: 3.2rem;
+}
+main .form__paragraph {
+  width: 80%;
+  color: #000000;
+  font-weight: 600;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin: auto;
+}
+main .form__countdown {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: auto;
+}
+main .form__countdown__clock {
+  font-weight: 600;
+  text-align: center;
+}
+main .form form span {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+main .form form div {
+  margin-top: 1rem;
+}
+main .form form div input {
+  width: 90%;
+  max-width: 200px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #fff;
+  background-color: #fff;
+  outline: none;
+  text-align: center;
+  margin: 0 0.5rem 0.5rem 0;
+}
+main .form form div input::placeholder {
+  color: #0959ba;
+  text-align: center;
+}
+main .form form div input:focus, main .form form div input:hover {
+  box-shadow: 0 0 8px #0959ba;
+  border: 1px solid #0959ba;
+  caret-color: #0959ba;
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+main .form form div button {
+  width: 90%;
+  max-width: 200px;
+  height: 37px;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  background-color: #0959ba;
+  outline: none;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+main .form form div button:hover {
+  box-shadow: 0 0 8px #0959ba;
+  border: 1px solid #0959ba;
+  caret-color: #ddd;
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+main .form form div button:active {
+  zoom: 0.99;
+}
+main .toast {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0.7rem 2rem;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+main .toast--success {
+  background-color: #28a745;
+  opacity: 1;
+}
+main .toast--warning {
+  background-color: #dc3545;
+  opacity: 1;
+}
+@media (max-width: 394px) {
+  main form div button {
+    margin: 0 0.5rem 0.5rem 0 !important;
+  }
+}
+@media (max-width: 400px) {
+  main .form {
+    border-radius: 0;
+    margin-left: 0 !important;
+  }
+  main .form__title {
+    font-size: 2rem !important;
+  }
+  main .toast {
+    width: 100%;
+    right: 1rem;
+    bottom: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  main .form {
+    margin-left: 0 !important;
+    padding: 0.5rem;
+  }
+  main .form__title {
+    font-size: 2.5rem;
+  }
+  main .form__paragraph {
+    width: 100%;
+  }
+}
+@media (max-width: 976px) {
+  main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "form" "contact";
+    place-items: center;
+    overflow-x: hidden;
+  }
+  main .contact {
+    padding: 2rem 0 2rem 0 !important;
+  }
+  main .form {
+    width: 100%;
+    text-align: center;
+    margin-left: 2rem;
+    padding: 2rem;
+  }
+  main .form__container {
+    width: 100%;
+    display: block;
+  }
+  main .form__countdown {
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+  main .contact {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0;
+  }
+}
+@media (min-width: 1368px) {
+  main {
+    grid-template-columns: 30% 70%;
+  }
+  main .contact {
+    padding-left: 5rem;
+  }
+}
+@media (min-width: 1600px) {
+  main {
+    grid-template-columns: 30% 70%;
+  }
+  main .contact {
+    padding-left: 8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/8a1ca8acd5.js" crossorigin="anonymous"></script>
+  <title>Vite App</title>
+</head>
+
+<body>
+  <main>
+    <section class="contact">
+      <img class="contact__logo" src="/wee.svg" alt="Wee Logistics Logo" />
+      <div class="contact__social">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div class="contact__location">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>Panamá
+      </div>
+      <div class="contact__email">
+        <i class="fa-solid fa-at"></i> contact.weelogistics@gmail.com
+      </div>
+      <div class="contact__phone">
+        <i class="fa-solid fa-phone"></i> +507 12346798
+      </div>
+    </section>
+    <section class="form">
+      <div class="form__container">
+        <h1 class="form__title">PROXIMÁMENTE</h1>
+        <p class="form__paragraph">Brindamos soluciones personalizadas para satisfacer tus necesidades de
+          transporte y almacenamiento de tus productos.</p>
+        <div class="form__countdown">
+          <div class="form__countdown__clock">
+            <div id="days">?</div>
+            <div>días</div>
+          </div>
+          <div class="form__countdown__clock">
+            <div id="hours">?</div>
+            <div>horas</div>
+          </div>
+          <div class="form__countdown__clock">
+            <div id="minutes">?</div>
+            <div>minutos</div>
+          </div>
+        </div>
+        <form id="subscription-form">
+          <span>¡Déjanos tu correo para mantenerte actualizado!</span>
+          <div>
+            <input name="name" placeholder="Nombre" />
+            <input name="email" placeholder="Ingresa tu correo" />
+            <button>SUSCRIBETE</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <span class="toast"></span>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.userActions {
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    display: 'flex';
+    gap: 1rem;
+
+    button {
+        background-color: var(--bg-color);
+
+        &:hover {
+            background-color: var(--secondary-color);
+        }
+    }
+
+    @media (max-width: 449px) {
+        padding: 0 1rem !important;
+    }
+}

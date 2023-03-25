@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import '@sweetalert2/theme-dark/dark.scss';
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --bg-color: #24262d;
+    --font-color: #e7f6f2;
+    --primary-color: #A5C9CA;
+    --secondary-color: #1a1c23;
+    --success-color: #11cb5f;
+    --warning-color: #db2a34;
+    --toastify-color-success: var(--success-color) !important;
+    --toastify-color-error: var(--warning-color) !important;
+}

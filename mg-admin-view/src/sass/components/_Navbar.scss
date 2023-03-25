@@ -1,0 +1,30 @@
+.navbar {
+    padding-top: 14px;
+
+    &__logo {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+
+        img {
+            width: 50px;
+            margin-right: .5rem;
+        }
+
+        div {
+            font-weight: bolder;
+
+            span {
+                font-weight: lighter;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        &__logo {
+            div {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

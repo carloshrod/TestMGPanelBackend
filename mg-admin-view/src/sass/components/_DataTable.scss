@@ -1,0 +1,20 @@
+.MuiTableCell-root {
+    color: var(--font-color) !important;
+    border-bottom: 1px solid var(--primary-color) !important;
+}
+
+.MuiTableCell-body {
+    font-weight: 300 !important;
+}
+
+.MuiTableSortLabel-root {
+    color: var(--font-color) !important;
+
+    &:hover {
+        color: rgb(228, 224, 228, 0.8) !important;
+    }
+}
+
+.MuiTablePagination-root {
+    color: var(--font-color) !important;
+}

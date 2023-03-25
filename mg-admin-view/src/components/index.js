@@ -1,0 +1,9 @@
+export { default as NavBar } from './layout/NavBar';
+export { default as MyContainer } from './layout/MyContainer';
+export { default as DataTable } from './tables/DataTable';
+export { default as FormUser } from './FormUser';
+export { default as UserInfo } from './UserInfo';
+export { default as UserActions } from './UserActions';
+export { default as Modal } from './Modal';
+export { default as Loader } from './Loader';
+export { default as Footer } from './layout/Footer';

@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+label,
+svg {
+    color: var(--font-color) !important;
+}
+
+input {
+    font-weight: 300 !important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+
+    &:hover {
+        color: var(--primary-color)
+    }
+}
+
+.MuiFormControl-root {
+    .MuiOutlinedInput-root:hover {
+        &>fieldset {
+            border-color: var(--primary-color),
+        }
+    }
+}
+
+.swal2-popup {
+    border: 1px solid var(--primary-color);
+
+    .swal2-icon.swal2-warning {
+        font-size: .7rem !important;
+        color: var(--warning-color);
+        border-color: var(--warning-color);
+    }
+
+    .swal2-icon.swal2-question {
+        font-size: .7rem !important;
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    button {
+        font-size: .9rem !important;
+        border-radius: .6rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+}

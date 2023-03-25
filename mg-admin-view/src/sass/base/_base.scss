@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+    font-family: var(--font);
+    background: var(--bg-color);
+    color: var(--font-color)
+}
+
+a:hover {
+    color: var(--font-color) !important;
+    text-shadow: 0 0 1px var(--font-color) !important;
+}
+
+main {
+    height: 100vh;
+    transition: translate .3s;
+}
+
+.MuiPaper-root {
+    color: var(--font-color) !important;
+    background-color: var(--secondary-color) !important;
+}
