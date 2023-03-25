@@ -33,13 +33,15 @@ const UserInfo = () => {
 					sx={{ textAlign: 'center', mt: { xs: -11, sm: -13 } }}
 				>
 					<Avatar
-						alt='Superadmin'
-						src='src/assets/my-avatar.png'
+						alt='User Avatar'
+						src='wee.svg'
 						sx={{
 							width: { xs: 120, sm: 150 },
 							height: { xs: 120, sm: 150 },
 							m: 'auto',
 							mb: 1,
+							backgroundColor: '#24262d',
+							border: '1px solid #ffffff',
 						}}
 					/>
 					<Box mb={2}>
