@@ -24,7 +24,7 @@ const DataTableToolbar = () => {
 				id='tableTitle'
 				component='div'
 			>
-				Filter
+				Usuarios registrados
 			</Typography>
 			<Tooltip title='Agregar usuario' arrow>
 				<Button
