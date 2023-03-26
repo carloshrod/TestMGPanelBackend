@@ -53,6 +53,7 @@ export default function DataTable({ users }) {
 				</TableContainer>
 				<TablePagination
 					rowsPerPageOptions={[5, 10, 25]}
+					labelRowsPerPage={'Usuarios por página:'}
 					component='div'
 					count={rows.length}
 					rowsPerPage={rowsPerPage}

@@ -51,7 +51,7 @@ const UserInfo = () => {
 						<EmailIcon />
 						{user.email}
 					</Typography>
-					<Tooltip title='Cancelar subscripción' arrow>
+					<Tooltip title={`${isSubs ? 'Cancelar subscripción' : ''}`} arrow>
 						<Chip
 							sx={{
 								cursor: `${isSubs ? 'pointer' : 'not-allowed'}`,

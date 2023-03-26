@@ -49,7 +49,30 @@ a {
 
     button {
         font-size: .9rem !important;
-        border-radius: .6rem !important;
-        padding: 0.5rem 1rem !important;
+        font-weight: bolder !important;
+        text-transform: uppercase !important;
+        background-color: transparent !important;
+        border-radius: 4px !important;
+        padding: 0.5rem 1.2rem !important;
+
+        &.swal2-confirm {
+            border: 1px solid var(--success-color) !important;
+
+            &:hover {
+                background-color: rgb(17, 203, 95, .05) !important;
+            }
+        }
+
+        &.swal2-cancel {
+            border: 1px solid var(--warning-color) !important;
+
+            &:hover {
+                background-color: rgb(219, 42, 52, .05) !important;
+            }
+        }
+    }
+
+    .swal2-styled {
+        box-shadow: none !important;
     }
 }

@@ -8,14 +8,15 @@ const MyContainer = ({ children }) => {
 		pathname === '/' ? 'Administrar Usuarios' : 'Detalles del Usuario';
 
 	return (
-		<Box className='myContainer'>
-			<Typography
-				sx={{ pl: { sm: 3 }, fontSize: { xs: 24, sm: 34 } }}
-				variant='h4'
-			>
-				{title}
-			</Typography>
+		<Box sx={{ height: '100%', px: { xs: 4, sm: 6, md: 8, lg: 10 }, py: 6 }}>
 			<Grid container spacing={3} py={2}>
+				<Typography
+					sx={{ pl: { xs: 3 }, fontSize: { xs: 24, sm: 34 } }}
+					variant='h4'
+				>
+					{title}
+				</Typography>
+
 				{children}
 			</Grid>
 		</Box>

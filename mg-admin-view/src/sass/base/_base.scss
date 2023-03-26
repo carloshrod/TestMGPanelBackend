@@ -1,15 +1,7 @@
 body {
-    height: 100vh;
     font-family: var(--font);
     background: var(--bg-color);
     color: var(--font-color)
-}
-
-main {
-    height: 100vh;
-    transition: translate .3s;
-    display: grid;
-    align-items: center;
 }
 
 a:hover {

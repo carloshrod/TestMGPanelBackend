@@ -60,8 +60,9 @@ const UserServices = () => {
 				html: `¿Estás seguro de que quieres eliminar este usuario de forma permanente? <br> <br> <b>¡No podrás revertir esta acción!</b>`,
 				showCancelButton: true,
 				confirmButtonColor: '#20cb84',
+				confirmButtonText: 'Aceptar',
 				cancelButtonColor: '#dc4035',
-				confirmButtonText: 'Accept',
+				cancelButtonText: 'Cancelar',
 				width: '24em',
 			});
 			if (resConfirm.isConfirmed) {
@@ -90,8 +91,9 @@ const UserServices = () => {
 				html: `¿Estás seguro que quieres cancelar la subscripción de este usuario?`,
 				showCancelButton: true,
 				confirmButtonColor: '#20cb84',
+				confirmButtonText: 'Aceptar',
 				cancelButtonColor: '#dc4035',
-				confirmButtonText: 'Accept',
+				cancelButtonText: 'Cancelar',
 				width: '24em',
 			});
 			if (resConfirm.isConfirmed) {
